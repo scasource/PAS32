@@ -1,0 +1,67 @@
+object SplashScreenForm: TSplashScreenForm
+  Left = 180
+  Top = 78
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'SplashScreenForm'
+  ClientHeight = 348
+  ClientWidth = 537
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 537
+    Height = 348
+    Align = alClient
+    BevelWidth = 5
+    TabOrder = 0
+    object SplashImage: TPMultiImage
+      Left = 5
+      Top = 5
+      Width = 527
+      Height = 338
+      GrabHandCursor = 5
+      Align = alClient
+      Scrolling = True
+      ShowScrollbars = True
+      B_W_CopyFlags = [C_DEL]
+      Color = clBtnFace
+      Picture.Data = {07544269746D617000000000}
+      ImageName = 'c:\pas32\splash\splash.bmp'
+      ImageReadRes = lAutoMatic
+      BlitMode = sLight
+      ImageWriteRes = sAutoMatic
+      TifSaveCompress = sNONE
+      TiffPage = 0
+      TiffAppend = False
+      JPegSaveQuality = 25
+      JPegSaveSmooth = 5
+      RubberBandBtn = mbLeft
+      ScrollbarWidth = 12
+      ParentColor = True
+      Stretch = True
+      TextLeft = 0
+      TextTop = 0
+      TextRotate = 0
+      TabOrder = 0
+      ZoomBy = 10
+    end
+  end
+  object SystemTable: TTable
+    DatabaseName = 'PropertyAssessmentSystem'
+    TableName = 'SystemRecord'
+    TableType = ttDBase
+    Left = 63
+    Top = 56
+  end
+end
